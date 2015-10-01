@@ -136,6 +136,10 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
+        /*
+         * Provider da biblioteca Prettus para utilizacao do padrao
+         * de projetos Repository.
+         */
         Prettus\Repository\Providers\RepositoryServiceProvider::class,
         
         /*
@@ -145,6 +149,10 @@ return [
         CodeProject\Providers\AuthServiceProvider::class,
         CodeProject\Providers\EventServiceProvider::class,
         CodeProject\Providers\RouteServiceProvider::class,
+        /*
+         * Provider para instanciacao das implementacoes das interfaces
+         * dos Repositories.
+         */
         CodeProject\Providers\CodeProjectRepositoryProvider::class,
 
     ],
